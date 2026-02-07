@@ -13,43 +13,26 @@
 # https://learnxinyminutes.com/docs/yaml/
 #
 # Site settings
-# These are used to personalize your new site. If you look in the HTML files,
-# you will see them accessed via {{ site.title }}, {{ site.email }}, and so on.
-# You can create any custom variable you would like, and they will be accessible
-# in the templates via {{ site.myvariable }}.
-
-title: "Balachandar"
-description: "AI Systems Engineer | Building Contexo"
-# Hacker theme doesn't usually use the email/description in the same way Minima does.
-# title: Agentic Systems & Context
+title: "AI Engineering"
+description: "Building production-ready AI systems, from memory to multi-agent architectures"
 email: bchandar.r@protonmail.com
-remote_theme: pages-themes/hacker
+remote_theme: pages-themes/hacker@v0.2.0
 
-# Add this line to override the 'View on GitHub' button link:
-github:
-  repository_url: https://github.com/rbalachandar/contexo
-# Keep your other settings below
-github_username: rbalachandar
+# Blog settings
 baseurl: ""
 url: "https://rbalachandar.github.io"
-# description: >- # this means to ignore newlines until "baseurl:"
-  # Software Engineer specializing in AI systems, 
-  # persistent context layers, and developer-first tooling.
-# baseurl: "" # the subpath of your site, e.g. /blog
-# url: "rbalachandar.github.io" # the base hostname & protocol for your site, e.g. http://example.com
-# github_username:  rbalachandar
+github_username: rbalachandar
+repository_url: https://github.com/rbalachandar/contexo
 
-# Hacker theme doesn't usually use the email/description in the same way Minima does.
+# Navigation
+nav:
+  - Home: /
+  - About: /about/
+  - GitHub: https://github.com/rbalachandar/contexo
 
 # Build settings
-# theme: minima
-# plugins:
-#   - jekyll-feed
-# Replace 'theme: minima' with:
-# remote_theme: pages-themes/cayman@v0.2.0
-remote_theme: pages-themes/hacker@v0.2.0
 plugins:
-- jekyll-remote-theme # add this line to the plugins list if you already have one    
+- jekyll-remote-theme
 - jekyll-sitemap
 # Exclude from processing.
 # The following items will not be processed, by default.
