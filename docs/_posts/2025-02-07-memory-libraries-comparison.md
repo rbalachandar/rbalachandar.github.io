@@ -4,6 +4,7 @@ title: "Comparing AI Memory Libraries: Contexo vs MemU, LangChain, and More"
 date: 2025-02-07 09:00:00 +0000
 categories: comparison memory-systems
 excerpt: "A detailed comparison of memory libraries for AI applications — features, tradeoffs, and when to use each."
+permalink: /blog/memory-libraries-comparison/
 ---
 
 When building AI applications with long-term memory, choosing the right library can make or break your system. Here's how Contexo compares to other popular options.

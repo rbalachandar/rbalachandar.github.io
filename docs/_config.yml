@@ -14,7 +14,7 @@
 #
 # Site settings
 title: "AI Engineering"
-description: "Building production-ready AI systems, from memory to multi-agent architectures"
+description: "Engineering AI for the real world — from context management to multi-agent systems"
 email: bchandar.r@protonmail.com
 remote_theme: pages-themes/hacker@v0.2.0
 
@@ -22,13 +22,18 @@ remote_theme: pages-themes/hacker@v0.2.0
 baseurl: ""
 url: "https://rbalachandar.github.io"
 github_username: rbalachandar
-repository_url: https://github.com/rbalachandar/contexo
+project: rbalachandar
+repository_url: https://github.com/rbalachandar
+
+# Permalink structure (clean URLs)
+permalink: /blog/:title/
 
 # Navigation
 nav:
   - Home: /
+  - Blog: /blog/
   - About: /about/
-  - GitHub: https://github.com/rbalachandar/contexo
+  - GitHub: https://github.com/rbalachandar
 
 # Build settings
 plugins:

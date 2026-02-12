@@ -1,0 +1,56 @@
+/* Custom styling for AI Engineering blog */
+
+/* Improve blog post list styling */
+h2 {
+  margin-top: 2rem;
+  margin-bottom: 0.5rem;
+}
+
+/* Add subtle spacing for better readability */
+article, main {
+  max-width: 700px;
+  margin: 0 auto;
+}
+
+/* Style code blocks better */
+pre {
+  background: #1a1a1a;
+  border: 1px solid #333;
+  border-radius: 4px;
+  padding: 1rem;
+  overflow-x: auto;
+}
+
+code {
+  background: #1a1a1a;
+  padding: 0.2rem 0.4rem;
+  border-radius: 3px;
+  font-size: 0.9em;
+}
+
+pre code {
+  background: transparent;
+  padding: 0;
+}
+
+/* Improve link readability */
+a {
+  text-decoration: none;
+  border-bottom: 1px dotted #666;
+}
+
+a:hover {
+  border-bottom-style: solid;
+}
+
+/* Better spacing for sections */
+hr {
+  border: none;
+  border-top: 1px solid #333;
+  margin: 3rem 0;
+}
+
+/* Excerpt styling */
+p {
+  line-height: 1.6;
+}
