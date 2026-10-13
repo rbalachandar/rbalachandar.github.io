@@ -143,7 +143,31 @@
   </section>
 
   <section>
-    <h2><span>05 ·</span> The measurable claim</h2>
+    <h2><span>05 ·</span> Case study — real protein design (CS08)</h2>
+    <div class="card">
+      <div class="v">
+      <b>Setup.</b> 82 binder candidates for the PD-L1 cancer target were
+      generated with an AI design pipeline (BindCraft structure backpropagation
+      + ProteinMPNN sequences) and screened with the Boltz-2 structure-prediction
+      model on a rented GPU — alongside 30 controls: sequence-scrambled
+      versions of the designs themselves and random peptides, all scored under
+      the identical protocol.<br><br>
+      <b>Result.</b> Design scores separate from control scores as a group
+      (statistically significant), but the score does not rank individual
+      sequences reliably: the best scrambled control scored above most real
+      designs, and 11 of 30 controls cleared the same 0.7 confidence gate the
+      designs cleared.<br><br>
+      <b>What the system did with a negative result.</b> Each of the 112
+      sequences was a hypothesis with a refutation condition written before
+      screening. The controls' own clause — "if this validates, the score's
+      ranking value is refuted" — triggered, and the finding was sealed in the
+      hash chain: the screening score is usable as a gate, not as a ranking.
+      </div>
+    </div>
+  </section>
+
+  <section>
+    <h2><span>06 ·</span> The measurable claim</h2>
     <table>
       <tr><th>epistemics — mean 0.982 · 14/14 tasks</th></tr>
       <tr><td>hit-recovery — honest abstains credited 0.5, not 1.0</td></tr>
@@ -155,7 +179,7 @@
   </section>
 
   <section>
-    <h2><span>06 ·</span> For scientists</h2>
+    <h2><span>07 ·</span> For scientists</h2>
     <div class="card">
       <div class="v">
       <code>bn read results.csv</code> — drop in a plate-reader export, get
