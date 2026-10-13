@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>BioNexus — agentic science system</title>
+<meta name="description" content="BioNexus is an agentic science system that runs experiments end to end — hypothesis portfolios, safety-gated labs, verdicts with confidence intervals against pre-registered criteria, and tamper-evident provenance.">
+<style>
+  :root { --bg:#0d1420; --surface:#131c2b; --card:#16202f; --ink:#e8eef5;
+          --muted:#8aa3b5; --line:#223047; --brand:#7dd3e8; --ok:#6ee7a0;
+          --warn:#fbbf24; --bad:#fca5a5; }
+  * { box-sizing: border-box; }
+  body { margin:0; background:var(--bg); color:var(--ink);
+         font:15px/1.6 -apple-system,'Segoe UI',Roboto,Helvetica,Arial,sans-serif; }
+  .wrap { max-width: 920px; margin: 0 auto; padding: 0 20px; }
+  header { background:#0a101a; border-bottom:1px solid var(--line); padding:14px 0; }
+  header .wrap { display:flex; align-items:center; gap:12px; }
+  .brand { font-weight:700; font-size:17px; letter-spacing:.02em; }
+  .tag { margin-left:auto; font-size:10px; font-weight:600;
+         letter-spacing:.14em; text-transform:uppercase; color:#8aa3b5; }
+  .hero { text-align:center; padding:44px 0 30px; }
+  .hero img.banner { max-width:640px; width:100%; }
+  h1 { font-size:26px; font-weight:700; margin:18px 0 6px; }
+  .sub { color:var(--muted); font-size:15px; max-width:720px; margin:0 auto; }
+  .badges { margin:18px 0 0; display:flex; gap:8px; justify-content:center;
+            flex-wrap:wrap; }
+  .badge { border:1px solid var(--line); border-radius:999px; padding:3px 12px;
+           font-size:11px; color:var(--muted); background:var(--surface); }
+  section { padding:26px 0; border-top:1px solid var(--line); }
+  h2 { font-size:18px; font-weight:700; margin:0 0 14px; }
+  h2 span { color:var(--brand); }
+  .card { background:var(--card); border:1px solid var(--line);
+          border-radius:10px; padding:16px 18px; }
+  .gif { display:block; width:100%; border-radius:10px;
+         border:1px solid var(--line); }
+  .grid { display:grid; grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+          gap:12px; }
+  .k { font-weight:700; font-size:13px; margin-bottom:4px; }
+  .v { font-size:12.5px; color:var(--muted); }
+  table { width:100%; border-collapse:collapse; font-size:12.5px; }
+  th,td { text-align:left; padding:6px 10px; border-bottom:1px solid var(--line); }
+  th { color:var(--muted); font-weight:600; }
+  code, .mono { font-family:'SF Mono',Menlo,Consolas,monospace; font-size:12px;
+                background:var(--surface); border-radius:4px; padding:1px 6px; }
+  ul { margin:8px 0; padding-left:18px; }
+  li { margin:3px 0; }
+  .ok { color:var(--ok); font-weight:600; }
+  footer { border-top:1px solid var(--line); padding:22px 0 40px;
+           color:var(--muted); font-size:12px; text-align:center; }
+  footer a { color:var(--brand); text-decoration:none; }
+</style>
+</head>
+<body>
+<header><div class="wrap">
+  <span class="brand">bionexus</span>
+  <span class="tag">agents run the scientific method</span>
+</div></header>
+
+<div class="wrap">
+
+  <div class="hero">
+    <img class="banner" src="/assets/bionexus/bionexus-banner.png" alt="BioNexus">
+    <h1>Agentic science that can be graded</h1>
+    <p class="sub">BioNexus is an agentic science system that runs experiments end to
+       end — hypothesis portfolios, safety-gated labs (simulated or real
+       instruments), verdicts with confidence intervals against
+       pre-registered criteria, and tamper-evident provenance.
+       Drug-discovery first, domain-agnostic core.</p>
+    <div class="badges">
+      <span class="badge">Python · FastAPI · React</span>
+      <span class="badge">MCP</span>
+      <span class="badge">hash-chained provenance</span>
+      <span class="badge">Apache-2.0</span>
+    </div>
+  </div>
+
+  <section>
+    <h2><span>01 ·</span> 60-second demo</h2>
+    <p class="sub">A scripted campaign on the production machinery (simulated
+       numbers): a borderline result <b>abstains</b>, an orthogonal method
+       <b>refutes</b> a plausible-looking hit, confirmation passes only on
+       agreement — every step sealed in a verified hash chain.</p>
+    <img class="gif" src="/assets/bionexus/bn-demo.gif" alt="BioNexus demo">
+  </section>
+
+  <section>
+    <h2><span>02 ·</span> What it does</h2>
+    <div class="grid">
+      <div class="card"><div class="k">Hypothesis portfolios</div>
+        <div class="v">Agents propose and rank testable hypotheses with
+        mechanism, predicted values, and pre-registered <b>refuted-if</b>
+        clauses — before any data exists.</div></div>
+      <div class="card"><div class="k">Safety-gated execution</div>
+        <div class="v">Every submission passes a policy engine the agent
+        cannot modify: toxicophore screening, BSL limits, DURC refusal,
+        operator halt switch, authorization matrix.</div></div>
+      <div class="card"><div class="k">Honest verdicts</div>
+        <div class="v">IC50s and interface scores carry confidence
+        intervals; a CI straddling the gate returns <b>inconclusive</b>,
+        never a coin-flip dressed as a result.</div></div>
+      <div class="card"><div class="k">Real instruments, honestly labeled</div>
+        <div class="v">Plate readers, Opentrons robots (contract-pinned
+        driver), MCP instrument servers, and sandboxes — simulators are
+        labeled simulated; hardware paths raise rather than fake.</div></div>
+      <div class="card"><div class="k">Tamper-evident provenance</div>
+        <div class="v">Every step lands in a hash-chained store enforced by
+        database triggers; Merkle anchoring makes the record externally
+        checkable.</div></div>
+      <div class="card"><div class="k">Graded by its own harness</div>
+        <div class="v">24 scored tasks in CI — hit recovery, verdict
+        honesty, adaptive dosing, sandbox isolation. Mean 0.954, all
+        pass; abstentions are graded down, not smoothed over.</div></div>
+    </div>
+  </section>
+
+  <section>
+    <h2><span>03 ·</span> Architecture</h2>
+    <p class="sub">Five core interfaces (model, lab, sandbox, provenance,
+       tools) behind one gateway; governance lives in code the agent
+       cannot reach.</p>
+    <img src="/assets/bionexus/01-layered-view.svg" alt="Layered architecture"
+         style="width:100%;border-radius:10px;border:1px solid var(--line);">
+  </section>
+
+  <section>
+    <h2><span>04 ·</span> Proven on real data — including negative results</h2>
+    <div class="card">
+      <ul>
+        <li><b>98.9% agreement, zero false actives</b> reproducing an NIH
+            MLPCN screening cascade from the lab's own deposited raw tables
+            — with 14 honest abstentions where confidence intervals
+            straddled the gate.</li>
+        <li><b>A published negative result:</b> fixed-reference IC50 rules
+            do not port to self-normalized qHTS deposits — found, tested,
+            and reported as such.</li>
+        <li><b>Prospective GPU experiment:</b> 82 AI-designed PD-L1 binders
+            + 30 matched controls showed that interface-confidence scores
+            separate designs from controls as a group but cannot rank
+            individuals — the platform's pre-registered refutation clauses
+            caught it, and the negative result is part of the record.</li>
+      </ul>
+    </div>
+  </section>
+
+  <section>
+    <h2><span>05 ·</span> The measurable claim</h2>
+    <table>
+      <tr><th>epistemics — mean 0.982 · 14/14 tasks</th></tr>
+      <tr><td>hit-recovery — honest abstains credited 0.5, not 1.0</td></tr>
+      <tr><td>adaptive-dose — 3 wells beat 4: a genuine negative result</td></tr>
+      <tr><td>sandbox-isolation — sibling writes invisible, forks diverge,
+              lifecycle sealed</td></tr>
+      <tr><td>verdict-honesty — abstains where the CI straddles the gate</td></tr>
+    </table>
+  </section>
+
+  <section>
+    <h2><span>06 ·</span> For scientists</h2>
+    <div class="card">
+      <div class="v">
+      <code>bn read results.csv</code> — drop in a plate-reader export, get
+      fitted dose–response curves with confidence intervals and QC.<br>
+      <code>bn auto --template dose-response-screen</code> — full campaign
+      on the virtual lab.<br>
+      <code>bn halt --engage</code> — an operator stop-switch the agent
+      cannot lift.<br>
+      <code>bn prove &lt;branch&gt; --html</code> — the whole story as a
+      tamper-evident audit.
+      </div>
+    </div>
+  </section>
+
+  <footer>
+    Source is private — walkthrough and demo available on request ·
+    <a href="https://github.com/rbalachandar">github.com/rbalachandar</a>
+  </footer>
+
+</div>
+</body>
+</html>
