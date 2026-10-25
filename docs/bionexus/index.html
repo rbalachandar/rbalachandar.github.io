@@ -98,6 +98,11 @@
         <div class="v">IC50s and interface scores carry confidence
         intervals; a CI straddling the gate returns <b>inconclusive</b>,
         never a coin-flip dressed as a result.</div></div>
+      <div class="card"><div class="k">Bayesian experiment selection</div>
+        <div class="v">Each round chooses <b>which</b> experiments to run by
+        a deterministic, applicability-domain-gated <b>expected-improvement</b>
+        acquisition — graded in CI to beat both random <i>and</i> naive greedy,
+        so it ships opt-in, with its reasoning sealed to provenance.</div></div>
       <div class="card"><div class="k">Real instruments, honestly labeled</div>
         <div class="v">Plate readers, Opentrons robots (contract-pinned
         driver), MCP instrument servers, and sandboxes — simulators are
@@ -107,8 +112,9 @@
         database triggers; Merkle anchoring makes the record externally
         checkable.</div></div>
       <div class="card"><div class="k">Graded by its own harness</div>
-        <div class="v">24 scored tasks in CI — hit recovery, verdict
-        honesty, adaptive dosing, sandbox isolation. Mean 0.954, all
+        <div class="v">25 scored tasks in CI — hit recovery, verdict
+        honesty, adaptive dosing, experiment selection, sandbox isolation.
+        Mean 0.950, all
         pass; abstentions are graded down, not smoothed over.</div></div>
     </div>
   </section>
@@ -169,8 +175,10 @@
   <section>
     <h2><span>06 ·</span> The measurable claim</h2>
     <table>
-      <tr><th>epistemics — mean 0.982 · 14/14 tasks</th></tr>
+      <tr><th>epistemics — mean 0.974 · 15/15 tasks</th></tr>
       <tr><td>hit-recovery — honest abstains credited 0.5, not 1.0</td></tr>
+      <tr><td>acquisition-policy — beats random &amp; naive greedy on seeded
+              pools; reported honestly that a CS04 replay ties greedy</td></tr>
       <tr><td>adaptive-dose — 3 wells beat 4: a genuine negative result</td></tr>
       <tr><td>sandbox-isolation — sibling writes invisible, forks diverge,
               lifecycle sealed</td></tr>
