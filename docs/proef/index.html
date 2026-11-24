@@ -85,9 +85,10 @@
   </div>
 
   <figure style="margin:0 0 6px">
-    <img class="shot" src="/assets/proef/proef-demo.gif" alt="proef demo: a campaign abstains on a borderline result and refutes a planted false hit">
-    <figcaption><code>proef demo</code>: a real campaign on the production machinery. It abstains where the confidence interval
-      straddles the gate and refutes a planted false hit. <b>All numbers are simulated.</b></figcaption>
+    <video class="shot" autoplay muted loop playsinline preload="auto" poster="/assets/proef/proef-ui-demo-poster.png" aria-label="The Proef workbench: review a plan, see why a candidate abstained, run a plate by hand, verify the ledger">
+      <source src="/assets/proef/proef-ui-demo.mp4" type="video/mp4">
+    </video>
+    <figcaption>The workbench: review what the agents did, see why a candidate abstained, run a plate by hand and have it judged against the gate registered beforehand, and verify the ledger. <b>All numbers are simulated.</b></figcaption>
   </figure>
 
   <section id="why">
@@ -113,6 +114,10 @@
     <p class="intro">Given a research problem and its constraints, agents propose a portfolio of hypotheses, select the ones worth testing,
       design experiments, run them on simulated or real equipment, and deliver verdicts as the results arrive.</p>
     <div class="diagram"><img src="/assets/proef/campaign-flow.svg" alt="How a campaign runs"></div>
+    <figure style="margin:20px 0 0">
+      <img class="shot" src="/assets/proef/proef-demo.gif" alt="proef demo: a campaign abstains on a borderline result and refutes a planted false hit">
+      <figcaption>The same engine from the terminal: <code>proef demo</code> abstains where the confidence interval straddles the gate and refutes a planted false hit. <b>All numbers are simulated.</b></figcaption>
+    </figure>
     <table style="margin-top:20px">
       <tr><th>Stage</th><th>What happens</th><th>Who acts</th></tr>
       <tr><td><b>Read the field</b> <small>(opt-in)</small></td><td>Look up literature, target biology and published activities before proposing. Every cited item must trace to something actually retrieved; queries are checked so nothing identifying the study leaves the machine.</td><td>Model, with read-only knowledge tools (PubMed, ChEMBL, Open Targets)</td></tr>
@@ -130,12 +135,6 @@
   <section id="workbench">
     <h2><span>THE WORKBENCH</span>Where a scientist actually works</h2>
     <p class="intro">A web workbench sits on top of the engine. Programs hold a pre-registered gate and many campaigns; decisions wait for a person; a plate run by hand is judged against the gate registered beforehand.</p>
-    <figure style="margin:0 0 16px">
-      <video class="shot" controls muted loop playsinline preload="none" poster="/assets/proef/proef-ui-demo-poster.png">
-        <source src="/assets/proef/proef-ui-demo.mp4" type="video/mp4">
-      </video>
-      <figcaption>The workbench: review what the agents did, see why a candidate abstained, run a plate by hand and have it judged against the gate registered beforehand, and verify the ledger. <b>All numbers are simulated.</b></figcaption>
-    </figure>
     <div class="two">
       <figure style="margin:0"><img class="shot" src="/assets/proef/plan-review.png" alt="Plan review"><figcaption>Plan review: the plan, the critic's concerns, and what grounds each hypothesis. Remove, approve or decline.</figcaption></figure>
       <figure style="margin:0"><img class="shot" src="/assets/proef/research-result.png" alt="Research result"><figcaption>A result with its interval and verdict, and why a candidate abstained.</figcaption></figure>
