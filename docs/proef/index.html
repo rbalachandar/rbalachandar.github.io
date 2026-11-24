@@ -1,0 +1,236 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Proef — agents propose, a scientist decides, the record proves it</title>
+<meta name="description" content="Proef is an open-source framework where AI agents propose hypotheses, run experiments and judge the results against criteria fixed before the experiment ran. Every claim carries its uncertainty, every decision is on a tamper-evident record, and a person stays in control of what reaches the lab.">
+<link rel="icon" href="/assets/proef/favicon.png">
+<link rel="canonical" href="https://rbalachandar.github.io/proef/">
+<meta property="og:title" content="Proef — agentic science you can audit">
+<meta property="og:description" content="AI agents propose and run experiments; verdicts are judged against criteria fixed beforehand, abstain when the evidence is too thin, and sit on a tamper-evident record.">
+<meta property="og:image" content="https://rbalachandar.github.io/assets/proef/social-preview.png">
+<style>
+  :root { --bg:#0b1020; --surface:#111836; --card:#141c3d; --ink:#e9eefb; --muted:#9aa9d3;
+          --line:#243061; --blue:#7d94d6; --accent:#ff8a1f; --ok:#8fb4f5; --warn:#c4a2f0; }
+  * { box-sizing: border-box; }
+  html { scroll-behavior: smooth; }
+  body { margin:0; background:var(--bg); color:var(--ink);
+         font:16px/1.65 -apple-system,'Segoe UI',Roboto,Helvetica,Arial,sans-serif; }
+  a { color:var(--blue); text-decoration:none; } a:hover { text-decoration:underline; }
+  .wrap { max-width: 960px; margin: 0 auto; padding: 0 22px; }
+  nav { position:sticky; top:0; z-index:5; background:rgba(11,16,32,.92); backdrop-filter:blur(6px);
+        border-bottom:1px solid var(--line); }
+  nav .wrap { display:flex; align-items:center; gap:22px; height:54px; font-size:14px; }
+  nav img { height:26px; } nav .sp { margin-left:auto; }
+  nav a.cta { border:1px solid var(--accent); color:var(--accent); border-radius:6px; padding:4px 12px; }
+  .hero { padding:64px 0 34px; text-align:center; }
+  h1 { font-size:38px; line-height:1.2; margin:0 0 16px; letter-spacing:-.01em; }
+  h1 em { font-style:normal; color:var(--accent); }
+  .lead { color:var(--muted); font-size:18px; max-width:720px; margin:0 auto 22px; }
+  .btns { display:flex; gap:12px; justify-content:center; flex-wrap:wrap; }
+  .btn { border:1px solid var(--line); background:var(--surface); color:var(--ink); border-radius:8px; padding:9px 18px; font-size:15px; }
+  .btn.p { background:var(--accent); border-color:var(--accent); color:#1a1000; font-weight:600; }
+  .btn:hover { text-decoration:none; filter:brightness(1.12); }
+  .badges { margin:20px 0 0; display:flex; gap:8px; justify-content:center; flex-wrap:wrap; }
+  .badge { border:1px solid var(--line); border-radius:999px; padding:2px 12px; font-size:12px; color:var(--muted); background:var(--surface); }
+  .shot { display:block; width:100%; border-radius:10px; border:1px solid var(--line); }
+  figcaption, .note { color:var(--muted); font-size:13px; margin-top:8px; }
+  section { padding:44px 0; border-top:1px solid var(--line); }
+  h2 { font-size:25px; margin:0 0 6px; letter-spacing:-.005em; }
+  h2 span { color:var(--accent); font-size:14px; letter-spacing:.14em; display:block; margin-bottom:4px; }
+  p.intro { color:var(--muted); max-width:760px; margin:0 0 22px; }
+  .grid { display:grid; grid-template-columns:repeat(auto-fit,minmax(270px,1fr)); gap:14px; }
+  .card { background:var(--card); border:1px solid var(--line); border-radius:10px; padding:16px 18px; }
+  .k { font-weight:700; margin-bottom:4px; } .v { font-size:14px; color:var(--muted); }
+  .rule { border-left:3px solid var(--accent); padding:4px 0 4px 16px; font-size:19px; margin:0 0 22px; max-width:760px; }
+  table { width:100%; border-collapse:collapse; font-size:14px; }
+  th,td { text-align:left; padding:8px 10px; border-bottom:1px solid var(--line); vertical-align:top; }
+  th { color:var(--muted); font-weight:600; }
+  td.r { white-space:nowrap; } .neg { color:var(--warn); font-weight:600; } .pos { color:var(--ok); font-weight:600; }
+  pre, code { font-family:'SF Mono',Menlo,Consolas,monospace; font-size:13px; }
+  code { background:var(--surface); border-radius:4px; padding:1px 6px; }
+  pre { background:var(--surface); border:1px solid var(--line); border-radius:10px; padding:14px 16px; overflow:auto; margin:0 0 12px; }
+  .diagram { background:#fff; border-radius:10px; padding:10px; border:1px solid var(--line); }
+  .diagram img { width:100%; display:block; }
+  .two { display:grid; grid-template-columns:1fr 1fr; gap:14px; } @media (max-width:760px){ .two{grid-template-columns:1fr;} h1{font-size:30px;} }
+  footer { border-top:1px solid var(--line); padding:26px 0 46px; color:var(--muted); font-size:13px; text-align:center; }
+</style>
+</head>
+<body>
+<nav><div class="wrap">
+  <a href="#top"><img src="/assets/proef/proef-lockup-onDark.png" alt="proef."></a>
+  <a href="#how">How it works</a><a href="#trust">Trust</a><a href="#evidence">Evidence</a><a href="#start">Get started</a>
+  <span class="sp"></span>
+  <a class="cta" href="https://github.com/rbalachandar/proef">GitHub</a>
+</div></nav>
+
+<div class="wrap" id="top">
+
+  <div class="hero">
+    <h1>Agents propose. A scientist decides.<br><em>The record proves it.</em></h1>
+    <p class="lead">Proef is an open-source framework where AI agents propose hypotheses, run experiments and judge the results
+      against criteria fixed <b>before</b> the experiment ran. Every claim carries its uncertainty, every decision is on a
+      tamper-evident record, and a person stays in control of what reaches the lab.</p>
+    <div class="btns">
+      <a class="btn p" href="#start">Run the demo</a>
+      <a class="btn" href="https://github.com/rbalachandar/proef">View on GitHub</a>
+      <a class="btn" href="https://github.com/rbalachandar/proef/tree/main/case-studies">Read the case studies</a>
+    </div>
+    <div class="badges">
+      <span class="badge">Python · FastAPI · React</span><span class="badge">MCP + Agent Skills</span>
+      <span class="badge">hash-chained provenance</span><span class="badge">Apache-2.0</span>
+      <span class="badge">drug discovery first, domain-agnostic core</span>
+    </div>
+  </div>
+
+  <figure style="margin:0 0 6px">
+    <img class="shot" src="/assets/proef/proef-demo.gif" alt="proef demo: a campaign abstains on a borderline result and refutes a planted false hit">
+    <figcaption><code>proef demo</code>: a real campaign on the production machinery. It abstains where the confidence interval
+      straddles the gate and refutes a planted false hit. <b>All numbers are simulated.</b></figcaption>
+  </figure>
+
+  <section id="why">
+    <h2><span>WHY PROEF</span>An agent that can be graded, not just trusted</h2>
+    <p class="intro">Most agent demos show a model that sounds right. Proef is built around the opposite question: when the model is
+      wrong, thin on evidence or manipulated, what stops it from reaching the lab or a published claim?</p>
+    <p class="rule"><b>Models propose and advise. Code decides and enforces. A person approves what reaches the lab.</b><br>
+      <span style="font-size:15px;color:var(--muted)">A model never writes a verdict, never approves its own submission and never moves a gate.</span></p>
+    <div class="grid">
+      <div class="card"><div class="k">Pre-registered, falsifiable</div><div class="v">Every hypothesis records its predicted value and a
+        <b>refuted-if</b> clause before any data exists. Verdicts are judged against criteria registered beforehand.</div></div>
+      <div class="card"><div class="k">Honest about uncertainty</div><div class="v">A confidence interval that straddles the gate
+        <b>abstains</b>. It is never rounded into a pass or a fail, and an abstention is graded down, not counted as a win.</div></div>
+      <div class="card"><div class="k">A person stays in control</div><div class="v">The only path from an agent to a lab is a gateway with a
+        policy engine the agent cannot modify, an operator halt it cannot lift, budgets, and a plan a person reviews first.</div></div>
+      <div class="card"><div class="k">Auditable end to end</div><div class="v">Every decision, call, result and verdict lands on a
+        hash-chained ledger. A campaign can be replayed from it with no model and no network, and an audit checks its rules over the record.</div></div>
+    </div>
+  </section>
+
+  <section id="how">
+    <h2><span>HOW IT WORKS</span>One campaign, from question to verdict</h2>
+    <p class="intro">Given a research problem and its constraints, agents propose a portfolio of hypotheses, select the ones worth testing,
+      design experiments, run them on simulated or real equipment, and deliver verdicts as the results arrive.</p>
+    <div class="diagram"><img src="/assets/proef/campaign-flow.svg" alt="How a campaign runs"></div>
+    <table style="margin-top:20px">
+      <tr><th>Stage</th><th>What happens</th><th>Who acts</th></tr>
+      <tr><td><b>Read the field</b> <small>(opt-in)</small></td><td>Look up literature, target biology and published activities before proposing. Every cited item must trace to something actually retrieved; queries are checked so nothing identifying the study leaves the machine.</td><td>Model, with read-only knowledge tools (PubMed, ChEMBL, Open Targets)</td></tr>
+      <tr><td><b>Propose</b></td><td>A portfolio of mechanistic, falsifiable hypotheses, each with a refuted-if clause. Citations are checked against PubMed; a fake citation ranks below none.</td><td>Model</td></tr>
+      <tr><td><b>Select</b></td><td>Rank, cap for diversity, and optionally choose the batch by applicability-domain-gated Bayesian expected improvement.</td><td>Engine</td></tr>
+      <tr><td><b>Plan review</b></td><td>A person sees the plan, the critic's concerns and the warnings, removes hypotheses and approves or declines.</td><td>A person</td></tr>
+      <tr><td><b>Check, then submit</b></td><td>Safety screening (toxicophores, regulated agents, biosafety level), halt switch, authorization, budgets.</td><td>Engine, policy code the agent cannot reach</td></tr>
+      <tr><td><b>Run</b></td><td>The assay runs and raw evidence comes back.</td><td>Lab adapter</td></tr>
+      <tr><td><b>Analyze and judge</b></td><td>Dose-response fit with a confidence interval and QC, then validated, invalidated or <b>abstain</b>. An orthogonal assay confirms before a result counts as confirmed.</td><td>Engine (deterministic rule)</td></tr>
+      <tr><td><b>Decide what next</b></td><td>Follow up an abstention, re-plan, run the next round or stop, always within a list of actions the engine allows.</td><td>Model or fixed order; a person decides accept and drop</td></tr>
+      <tr><td><b>Record and audit</b></td><td>Everything goes on the hash-chained ledger; replayable offline.</td><td>Provenance store</td></tr>
+    </table>
+  </section>
+
+  <section id="workbench">
+    <h2><span>THE WORKBENCH</span>Where a scientist actually works</h2>
+    <p class="intro">A web workbench sits on top of the engine. Programs hold a pre-registered gate and many campaigns; decisions wait for a person; a plate run by hand is judged against the gate registered beforehand.</p>
+    <div class="two">
+      <figure style="margin:0"><img class="shot" src="/assets/proef/plan-review.png" alt="Plan review"><figcaption>Plan review: the plan, the critic's concerns, and what grounds each hypothesis. Remove, approve or decline.</figcaption></figure>
+      <figure style="margin:0"><img class="shot" src="/assets/proef/research-result.png" alt="Research result"><figcaption>A result with its interval and verdict, and why a candidate abstained.</figcaption></figure>
+    </div>
+    <div class="grid" style="margin-top:16px">
+      <div class="card"><div class="k">Programs and campaigns</div><div class="v">A program is the goal and its gate. Campaigns run against it, in parallel, sharing one pool of lab runs. A model can split an objective into sub-problems that you review first.</div></div>
+      <div class="card"><div class="k">Decisions in one place</div><div class="v">Pending approvals and abstentions to follow up, accept or drop, filterable or grouped by program, each recorded under a name.</div></div>
+      <div class="card"><div class="k">Bring your own plate</div><div class="v"><code>proef read results.csv</code> turns an instrument export into fitted curves, intervals and QC, with no model involved.</div></div>
+    </div>
+  </section>
+
+  <section id="trust">
+    <h2><span>TRUST MECHANISMS</span>Guarantees that live in code, not in a prompt</h2>
+    <table>
+      <tr><th>Mechanism</th><th>What it guarantees</th></tr>
+      <tr><td>Uncertainty vetoes certainty</td><td>A 95% interval that straddles the gate abstains, on any metric.</td></tr>
+      <tr><td>Molecular safety gate</td><td>Versioned toxicophore rules; hard classes always refuse; electrophilic warheads pass only with declared covalent intent. Regulated pathogens and toxins are refused and the refusal is recorded.</td></tr>
+      <tr><td>Execution governance</td><td>An operator halt the agent cannot lift, an autonomous / human-approved / never authorization matrix, budgets that cap what a campaign may consume.</td></tr>
+      <tr><td>Tiered trust</td><td>Deterministic rules hold the floor. A model may add a flag or demand human review; it can never clear a refusal.</td></tr>
+      <tr><td>Provenance physics</td><td>The hash chain is enforced by the database and recomputed on read; Merkle anchoring lets anyone check the record was not edited.</td></tr>
+      <tr><td>Grounded, not asserted</td><td>Items a model cites from the literature must trace to retrieved results. Prior predictions are labelled priors, never evidence.</td></tr>
+      <tr><td>Input trust boundary</td><td>Junk or adversarial instrument files degrade to "unreadable, no verdicts changed"; injection-shaped sample names cannot reach the gate as instructions.</td></tr>
+    </table>
+    <div class="diagram" style="margin-top:18px"><img src="/assets/proef/verdict-rule.svg" alt="The verdict rule"></div>
+  </section>
+
+  <section id="evidence">
+    <h2><span>EVIDENCE</span>Graded by its own harness, tested on real data</h2>
+    <p class="intro"><code>proef eval</code> runs 25 scored tasks against seeded ground truth: deterministic, offline, and run in CI.
+      The latest run: <b>mean 0.947, all passing.</b> Scores below 1.0 are kept as reported.</p>
+    <table>
+      <tr><th>Tier</th><th>Covers</th></tr>
+      <tr><td>epistemics (15)</td><td>hit recovery (honest abstains credited 0.5, not 1.0), verdict honesty, confirmation coverage, falsifiability, adaptive dosing (3 wells beat 4), Bayesian acquisition beating random, flywheel memory, sandbox isolation</td></tr>
+      <tr><td>models (6)</td><td>baseline property models on scaffold folds, against a random floor</td></tr>
+      <tr><td>reproductions (2)</td><td>published-paper reruns on frozen data</td></tr>
+      <tr><td>agent (2, opt-in)</td><td>end-to-end triage with an exact refusal map; no refused compound tested, no wrong confirm</td></tr>
+    </table>
+    <h3 style="margin:30px 0 8px;font-size:18px">Eight case studies, negative results included</h3>
+    <table>
+      <tr><th>Study</th><th>Result</th></tr>
+      <tr><td>Tyrphostins (1989), blind reproduction</td><td class="neg">Illustrative only: the model had already seen the paper.</td></tr>
+      <tr><td>AZ3246 HPK1 (2025), post-cutoff paper</td><td>Found the paper's core from structures alone. Ranking above chance (ρ ≈ +0.5) but <span class="neg">not significantly better than simple baselines</span> at n = 21.</td></tr>
+      <tr><td>Four ChEMBL papers</td><td>Chemotype identified 4/4; audit trail intact; <span class="neg">no enrichment claim survives correction</span>.</td></tr>
+      <tr><td>EGFR hit-to-lead, prospective, seven successors hidden</td><td class="pos">5 true hits, 5 true refutations, 2 honest abstentions.</td></tr>
+      <tr><td>SARS-CoV 3CLpro screen (2013)</td><td class="pos">98.9% agreement on decided calls, 0 false actives, 14 abstentions.</td></tr>
+      <tr><td>NCATS qHTS deposit</td><td class="neg">Negative: our rules don't port to self-normalized data (ρ = 0.107), which led to refusing them.</td></tr>
+      <tr><td>Proteinbase reproduction</td><td>Hit rates reproduced. <span class="neg">Computed confidence picked worse than random</span>; a miscalibrated applicability-domain floor was found and fixed.</td></tr>
+      <tr><td>PD-L1 binder designs</td><td>Score separates designs from controls (AUC 0.80) but <span class="neg">does not rank sequences</span>: use it as a gate, not a ranking.</td></tr>
+    </table>
+    <p class="note">Each study's README has the setup, full results and limitations. The suite has caught real bugs, including an observed-max fit bias and a Make step that ran before the safety screen; each is now a permanent regression test.</p>
+  </section>
+
+  <section id="plug">
+    <h2><span>PLUGGABLE BY DESIGN</span>Five interfaces, swap anything</h2>
+    <div class="diagram"><img src="/assets/proef/architecture.svg" alt="Architecture: people, engine, gates and the ledger"></div>
+    <table style="margin-top:20px">
+      <tr><th>Interface</th><th>Adapters today</th></tr>
+      <tr><td><code>ModelProvider</code></td><td>OpenAI-compatible endpoints (OpenAI, ollama, vLLM), Anthropic</td></tr>
+      <tr><td><code>LabAdapter</code></td><td>Simulators, recording/replay, plate-reader share, Opentrons OT-2/Flex (contract-tested against a simulated robot), MCP instrument servers</td></tr>
+      <tr><td><code>Sandbox</code></td><td>local, Docker, OpenSandbox, AgentENV</td></tr>
+      <tr><td><code>ProvenanceStore</code></td><td>SQLite (hash-chained, engine triggers)</td></tr>
+      <tr><td><code>BioTool</code></td><td>RDKit descriptors, ADMET, AlphaGenome variant scoring</td></tr>
+    </table>
+    <p class="note">Proef ships as an Agent Skills package and exposes its tools over MCP (<code>proef mcp</code>); it also consumes MCP instrument servers.</p>
+  </section>
+
+  <section id="status">
+    <h2><span>STATUS</span>What is and is not proven</h2>
+    <div class="card"><div class="v">
+      <ul style="margin:0;padding-left:18px">
+        <li>Most results here come from <b>simulated labs and replayed real data</b>. Simulated numbers are always labelled as such.</li>
+        <li><b>Nothing is hardware-validated yet</b>: the Opentrons path is contract-tested against a simulated robot, and the MCP instrument path was exercised live against two third-party servers only.</li>
+        <li>With a real model, the framework was validated end to end (tool use, grounding, replay, blinding). <b>Whether grounding improves hypothesis quality has not been evaluated.</b></li>
+        <li>Sandboxing is opt-in. Docker isolation is verified in CI; analysis fits still run in-process.</li>
+        <li>The live plan is on GitHub in <a href="https://github.com/rbalachandar/proef/blob/main/docs/ROADMAP.md"><code>docs/ROADMAP.md</code></a>.</li>
+      </ul></div></div>
+  </section>
+
+  <section id="start">
+    <h2><span>GET STARTED</span>Try it in two minutes</h2>
+    <p class="intro">From a checkout, no lab and no API key needed. The demo and tests run offline on a simulated lab.</p>
+<pre>git clone https://github.com/rbalachandar/proef.git
+cd proef
+make install        # python package + web deps into ./.venv
+.venv/bin/python -m proef.cli demo     # abstain-and-refute cascade (simulated)
+make run            # workbench on http://localhost:8000</pre>
+<pre># with .venv/bin on your PATH (or prefix each command with .venv/bin/)
+proef read results.csv                       # analyze an instrument export
+proef campaign auto --template dose-response-screen \
+      --field compounds=C1,C2,C3 --autonomy act --yes
+proef prove &lt;branch&gt; --html out.html     # tamper-evident report
+proef eval                                    # the graded suite</pre>
+    <p class="note">Bring a model with <code>PROEF_LLM_PRESET</code> / <code>PROEF_LLM_MODEL</code> (any OpenAI-compatible endpoint or Anthropic). Full guide: <a href="https://github.com/rbalachandar/proef/blob/main/docs/QUICKSTART.md">QUICKSTART</a>.</p>
+  </section>
+
+</div>
+
+<footer><div class="wrap">
+  <b>proef</b> is Dutch for <i>experiment</i>, <i>trial</i> and <i>proof</i>. · Apache-2.0 ·
+  <a href="https://github.com/rbalachandar/proef">github.com/rbalachandar/proef</a><br>
+  Formerly BioNexus.
+</div></footer>
+</body>
+</html>

@@ -1,0 +1,71 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 650" width="1200" height="650" role="img" aria-label="Proef architecture: people, engine, gates, interfaces and the ledger">
+<title>Proef architecture: people, engine, gates, interfaces and the ledger</title>
+<rect width="1200" height="650" fill="#090c12"/>
+<text x="40" y="68" font-size="11" fill="#5d6882" font-weight="600" font-family="-apple-system,'Segoe UI',Inter,Helvetica,Arial,sans-serif" text-anchor="start" letter-spacing="1.4">PEOPLE</text>
+<rect x="200" y="40" width="312" height="96" fill="#33290d" stroke="#e0ac24" stroke-width="1"/>
+<text x="214" y="65" font-size="14.5" fill="#e8ecf4" font-weight="600" font-family="-apple-system,'Segoe UI',Inter,Helvetica,Arial,sans-serif" text-anchor="start">Plan review and decisions</text>
+<text x="214" y="87" font-size="12" fill="#8f9ab0" font-weight="400" font-family="-apple-system,'Segoe UI',Inter,Helvetica,Arial,sans-serif" text-anchor="start">approve, remove or decline</text>
+<text x="214" y="104" font-size="12" fill="#8f9ab0" font-weight="400" font-family="-apple-system,'Segoe UI',Inter,Helvetica,Arial,sans-serif" text-anchor="start">sealed under the decider&#x27;s name</text>
+<rect x="528" y="40" width="312" height="96" fill="#33290d" stroke="#e0ac24" stroke-width="1"/>
+<text x="542" y="65" font-size="14.5" fill="#e8ecf4" font-weight="600" font-family="-apple-system,'Segoe UI',Inter,Helvetica,Arial,sans-serif" text-anchor="start">Pause and halt</text>
+<text x="542" y="87" font-size="12" fill="#8f9ab0" font-weight="400" font-family="-apple-system,'Segoe UI',Inter,Helvetica,Arial,sans-serif" text-anchor="start">hold one program or campaign</text>
+<text x="542" y="104" font-size="12" fill="#8f9ab0" font-weight="400" font-family="-apple-system,'Segoe UI',Inter,Helvetica,Arial,sans-serif" text-anchor="start">global halt refuses everything</text>
+<rect x="856" y="40" width="312" height="96" fill="#33290d" stroke="#e0ac24" stroke-width="1"/>
+<text x="870" y="65" font-size="14.5" fill="#e8ecf4" font-weight="600" font-family="-apple-system,'Segoe UI',Inter,Helvetica,Arial,sans-serif" text-anchor="start">Authority and SOPs</text>
+<text x="870" y="87" font-size="12" fill="#8f9ab0" font-weight="400" font-family="-apple-system,'Segoe UI',Inter,Helvetica,Arial,sans-serif" text-anchor="start">what agents may do alone</text>
+<text x="870" y="104" font-size="12" fill="#8f9ab0" font-weight="400" font-family="-apple-system,'Segoe UI',Inter,Helvetica,Arial,sans-serif" text-anchor="start">sign-offs recorded</text>
+<text x="40" y="196" font-size="11" fill="#5d6882" font-weight="600" font-family="-apple-system,'Segoe UI',Inter,Helvetica,Arial,sans-serif" text-anchor="start" letter-spacing="1.4">ENGINE</text>
+<rect x="200" y="168" width="230" height="96" fill="#14233f" stroke="#5b8def" stroke-width="1"/>
+<text x="214" y="193" font-size="14.5" fill="#e8ecf4" font-weight="600" font-family="-apple-system,'Segoe UI',Inter,Helvetica,Arial,sans-serif" text-anchor="start">Hypothesis agent and critic</text>
+<text x="214" y="215" font-size="12" fill="#8f9ab0" font-weight="400" font-family="-apple-system,'Segoe UI',Inter,Helvetica,Arial,sans-serif" text-anchor="start">families with a &#x27;refuted if&#x27; clause</text>
+<text x="214" y="232" font-size="12" fill="#8f9ab0" font-weight="400" font-family="-apple-system,'Segoe UI',Inter,Helvetica,Arial,sans-serif" text-anchor="start">citations checked</text>
+<rect x="446" y="168" width="230" height="96" fill="#14233f" stroke="#5b8def" stroke-width="1"/>
+<text x="460" y="193" font-size="14.5" fill="#e8ecf4" font-weight="600" font-family="-apple-system,'Segoe UI',Inter,Helvetica,Arial,sans-serif" text-anchor="start">Plan gate and portfolio</text>
+<text x="460" y="215" font-size="12" fill="#8f9ab0" font-weight="400" font-family="-apple-system,'Segoe UI',Inter,Helvetica,Arial,sans-serif" text-anchor="start">selects what goes to the lab</text>
+<text x="460" y="232" font-size="12" fill="#8f9ab0" font-weight="400" font-family="-apple-system,'Segoe UI',Inter,Helvetica,Arial,sans-serif" text-anchor="start">budget enforced</text>
+<rect x="692" y="168" width="230" height="96" fill="#14233f" stroke="#5b8def" stroke-width="1"/>
+<text x="706" y="193" font-size="14.5" fill="#e8ecf4" font-weight="600" font-family="-apple-system,'Segoe UI',Inter,Helvetica,Arial,sans-serif" text-anchor="start">Analysis and verdict rule</text>
+<text x="706" y="215" font-size="12" fill="#8f9ab0" font-weight="400" font-family="-apple-system,'Segoe UI',Inter,Helvetica,Arial,sans-serif" text-anchor="start">fits, QC, 95% interval</text>
+<text x="706" y="232" font-size="12" fill="#8f9ab0" font-weight="400" font-family="-apple-system,'Segoe UI',Inter,Helvetica,Arial,sans-serif" text-anchor="start">abstains when it straddles</text>
+<rect x="938" y="168" width="230" height="96" fill="#14233f" stroke="#5b8def" stroke-width="1"/>
+<text x="952" y="193" font-size="14.5" fill="#e8ecf4" font-weight="600" font-family="-apple-system,'Segoe UI',Inter,Helvetica,Arial,sans-serif" text-anchor="start">Programs and research trees</text>
+<text x="952" y="215" font-size="12" fill="#8f9ab0" font-weight="400" font-family="-apple-system,'Segoe UI',Inter,Helvetica,Arial,sans-serif" text-anchor="start">gate inherited downward</text>
+<text x="952" y="232" font-size="12" fill="#8f9ab0" font-weight="400" font-family="-apple-system,'Segoe UI',Inter,Helvetica,Arial,sans-serif" text-anchor="start">results roll up</text>
+<text x="40" y="328" font-size="11" fill="#5d6882" font-weight="600" font-family="-apple-system,'Segoe UI',Inter,Helvetica,Arial,sans-serif" text-anchor="start" letter-spacing="1.4">GATES</text>
+<rect x="200" y="300" width="970" height="56" fill="#35150f" stroke="#e8604c" stroke-width="1"/>
+<text x="216" y="334" font-size="13.5" fill="#e8ecf4" font-weight="600" font-family="-apple-system,'Segoe UI',Inter,Helvetica,Arial,sans-serif" text-anchor="start">Readiness review  ·  Safety engine  ·  Halt and pause  ·  Authorization  ·  every refusal carries a reason</text>
+<path d="M685 136 L685 168" stroke="#5d6882" stroke-width="1.4" fill="none"/>
+<polygon points="685.0,168.0 681.5,159.7 688.5,159.7" fill="#5d6882"/>
+<path d="M685 264 L685 300" stroke="#5d6882" stroke-width="1.4" fill="none"/>
+<polygon points="685.0,300.0 681.5,291.7 688.5,291.7" fill="#5d6882"/>
+<text x="40" y="400" font-size="11" fill="#5d6882" font-weight="600" font-family="-apple-system,'Segoe UI',Inter,Helvetica,Arial,sans-serif" text-anchor="start" letter-spacing="1.4">INTERFACES</text>
+<rect x="200" y="376" width="181" height="88" fill="#121926" stroke="#2a3550" stroke-width="1"/>
+<text x="214" y="401" font-size="14.5" fill="#e8ecf4" font-weight="600" font-family="-apple-system,'Segoe UI',Inter,Helvetica,Arial,sans-serif" text-anchor="start">ModelProvider</text>
+<text x="214" y="423" font-size="12" fill="#8f9ab0" font-weight="400" font-family="-apple-system,'Segoe UI',Inter,Helvetica,Arial,sans-serif" text-anchor="start">OpenAI-compatible,</text>
+<text x="214" y="440" font-size="12" fill="#8f9ab0" font-weight="400" font-family="-apple-system,'Segoe UI',Inter,Helvetica,Arial,sans-serif" text-anchor="start">Anthropic</text>
+<rect x="397" y="376" width="181" height="88" fill="#121926" stroke="#2a3550" stroke-width="1"/>
+<text x="411" y="401" font-size="14.5" fill="#e8ecf4" font-weight="600" font-family="-apple-system,'Segoe UI',Inter,Helvetica,Arial,sans-serif" text-anchor="start">BioTool</text>
+<text x="411" y="423" font-size="12" fill="#8f9ab0" font-weight="400" font-family="-apple-system,'Segoe UI',Inter,Helvetica,Arial,sans-serif" text-anchor="start">RDKit, ADMET,</text>
+<text x="411" y="440" font-size="12" fill="#8f9ab0" font-weight="400" font-family="-apple-system,'Segoe UI',Inter,Helvetica,Arial,sans-serif" text-anchor="start">genomics</text>
+<rect x="594" y="376" width="181" height="88" fill="#121926" stroke="#2a3550" stroke-width="1"/>
+<text x="608" y="401" font-size="14.5" fill="#e8ecf4" font-weight="600" font-family="-apple-system,'Segoe UI',Inter,Helvetica,Arial,sans-serif" text-anchor="start">LabAdapter</text>
+<text x="608" y="423" font-size="12" fill="#8f9ab0" font-weight="400" font-family="-apple-system,'Segoe UI',Inter,Helvetica,Arial,sans-serif" text-anchor="start">simulator, plate reader</text>
+<text x="608" y="440" font-size="12" fill="#8f9ab0" font-weight="400" font-family="-apple-system,'Segoe UI',Inter,Helvetica,Arial,sans-serif" text-anchor="start">share, Opentrons</text>
+<rect x="791" y="376" width="181" height="88" fill="#121926" stroke="#2a3550" stroke-width="1"/>
+<text x="805" y="401" font-size="14.5" fill="#e8ecf4" font-weight="600" font-family="-apple-system,'Segoe UI',Inter,Helvetica,Arial,sans-serif" text-anchor="start">Sandbox</text>
+<text x="805" y="423" font-size="12" fill="#8f9ab0" font-weight="400" font-family="-apple-system,'Segoe UI',Inter,Helvetica,Arial,sans-serif" text-anchor="start">local, Docker,</text>
+<text x="805" y="440" font-size="12" fill="#8f9ab0" font-weight="400" font-family="-apple-system,'Segoe UI',Inter,Helvetica,Arial,sans-serif" text-anchor="start">OpenSandbox</text>
+<rect x="988" y="376" width="181" height="88" fill="#121926" stroke="#2a3550" stroke-width="1"/>
+<text x="1002" y="401" font-size="14.5" fill="#e8ecf4" font-weight="600" font-family="-apple-system,'Segoe UI',Inter,Helvetica,Arial,sans-serif" text-anchor="start">ProvenanceStore</text>
+<text x="1002" y="423" font-size="12" fill="#8f9ab0" font-weight="400" font-family="-apple-system,'Segoe UI',Inter,Helvetica,Arial,sans-serif" text-anchor="start">SQLite, hash-chained</text>
+<path d="M685 356 L685 376" stroke="#5d6882" stroke-width="1.4" fill="none"/>
+<polygon points="685.0,376.0 681.5,367.7 688.5,367.7" fill="#5d6882"/>
+<text x="40" y="516" font-size="11" fill="#5d6882" font-weight="600" font-family="-apple-system,'Segoe UI',Inter,Helvetica,Arial,sans-serif" text-anchor="start" letter-spacing="1.4">RECORD</text>
+<rect x="200" y="490" width="970" height="70" fill="#14233f" stroke="#5b8def" stroke-width="1"/>
+<text x="216" y="520" font-size="14.5" fill="#e8ecf4" font-weight="600" font-family="-apple-system,'Segoe UI',Inter,Helvetica,Arial,sans-serif" text-anchor="start">Hash-chained ledger</text>
+<text x="216" y="541" font-size="12" fill="#8f9ab0" font-weight="400" font-family="-apple-system,'Segoe UI',Inter,Helvetica,Arial,sans-serif" text-anchor="start">Every proposal, decision, run and verdict is sealed. Chain verification recomputes it on read. Anchoring makes it checkable outside this machine.</text>
+<path d="M685 464 L685 490" stroke="#5d6882" stroke-width="1.4" fill="none"/>
+<polygon points="685.0,490.0 681.5,481.7 688.5,481.7" fill="#5d6882"/>
+<text x="40" y="612" font-size="12" fill="#5d6882" font-weight="400" font-family="-apple-system,'Segoe UI',Inter,Helvetica,Arial,sans-serif" text-anchor="start">Everything in the Interfaces row is pluggable. The contracts are pydantic models in proef.core.contracts.</text>
+<text x="40" y="634" font-size="12" fill="#5d6882" font-weight="400" font-family="-apple-system,'Segoe UI',Inter,Helvetica,Arial,sans-serif" text-anchor="start">A person sits above the engine: nothing reaches the lab until a plan is approved, and the gates apply even then.</text>
+</svg>

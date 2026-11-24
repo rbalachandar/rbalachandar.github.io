@@ -1,0 +1,66 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 560" width="1200" height="560" role="img" aria-label="How a campaign runs: problem, hypotheses, plan review, gates, lab run, verdict">
+<title>How a campaign runs: problem, hypotheses, plan review, gates, lab run, verdict</title>
+<rect width="1200" height="560" fill="#090c12"/>
+<rect x="30" y="56" width="170" height="92" fill="#33290d" stroke="#e0ac24" stroke-width="1"/>
+<text x="44" y="81" font-size="14.5" fill="#e8ecf4" font-weight="600" font-family="-apple-system,'Segoe UI',Inter,Helvetica,Arial,sans-serif" text-anchor="start">1  Problem and gate</text>
+<text x="44" y="103" font-size="12" fill="#8f9ab0" font-weight="400" font-family="-apple-system,'Segoe UI',Inter,Helvetica,Arial,sans-serif" text-anchor="start">the gate is registered</text>
+<text x="44" y="120" font-size="12" fill="#8f9ab0" font-weight="400" font-family="-apple-system,'Segoe UI',Inter,Helvetica,Arial,sans-serif" text-anchor="start">before any data</text>
+<rect x="224" y="56" width="170" height="92" fill="#14233f" stroke="#5b8def" stroke-width="1"/>
+<text x="238" y="81" font-size="14.5" fill="#e8ecf4" font-weight="600" font-family="-apple-system,'Segoe UI',Inter,Helvetica,Arial,sans-serif" text-anchor="start">2  Hypotheses</text>
+<text x="238" y="103" font-size="12" fill="#8f9ab0" font-weight="400" font-family="-apple-system,'Segoe UI',Inter,Helvetica,Arial,sans-serif" text-anchor="start">the model proposes families</text>
+<text x="238" y="120" font-size="12" fill="#8f9ab0" font-weight="400" font-family="-apple-system,'Segoe UI',Inter,Helvetica,Arial,sans-serif" text-anchor="start">with a &#x27;refuted if&#x27; clause</text>
+<path d="M202 102 L222 102" stroke="#5d6882" stroke-width="1.4" fill="none"/>
+<polygon points="222.0,102.0 213.7,105.5 213.7,98.5" fill="#5d6882"/>
+<rect x="418" y="56" width="170" height="92" fill="#33290d" stroke="#e0ac24" stroke-width="1"/>
+<text x="432" y="81" font-size="14.5" fill="#e8ecf4" font-weight="600" font-family="-apple-system,'Segoe UI',Inter,Helvetica,Arial,sans-serif" text-anchor="start">3  Plan review</text>
+<text x="432" y="103" font-size="12" fill="#8f9ab0" font-weight="400" font-family="-apple-system,'Segoe UI',Inter,Helvetica,Arial,sans-serif" text-anchor="start">critic raises concerns,</text>
+<text x="432" y="120" font-size="12" fill="#8f9ab0" font-weight="400" font-family="-apple-system,'Segoe UI',Inter,Helvetica,Arial,sans-serif" text-anchor="start">a person approves or edits</text>
+<path d="M396 102 L416 102" stroke="#5d6882" stroke-width="1.4" fill="none"/>
+<polygon points="416.0,102.0 407.7,105.5 407.7,98.5" fill="#5d6882"/>
+<rect x="612" y="56" width="170" height="92" fill="#35150f" stroke="#e8604c" stroke-width="1"/>
+<text x="626" y="81" font-size="14.5" fill="#e8ecf4" font-weight="600" font-family="-apple-system,'Segoe UI',Inter,Helvetica,Arial,sans-serif" text-anchor="start">4  Gates</text>
+<text x="626" y="103" font-size="12" fill="#8f9ab0" font-weight="400" font-family="-apple-system,'Segoe UI',Inter,Helvetica,Arial,sans-serif" text-anchor="start">readiness, safety,</text>
+<text x="626" y="120" font-size="12" fill="#8f9ab0" font-weight="400" font-family="-apple-system,'Segoe UI',Inter,Helvetica,Arial,sans-serif" text-anchor="start">halt and pause</text>
+<path d="M590 102 L610 102" stroke="#5d6882" stroke-width="1.4" fill="none"/>
+<polygon points="610.0,102.0 601.7,105.5 601.7,98.5" fill="#5d6882"/>
+<rect x="806" y="56" width="170" height="92" fill="#121926" stroke="#2a3550" stroke-width="1"/>
+<text x="820" y="81" font-size="14.5" fill="#e8ecf4" font-weight="600" font-family="-apple-system,'Segoe UI',Inter,Helvetica,Arial,sans-serif" text-anchor="start">5  Lab run</text>
+<text x="820" y="103" font-size="12" fill="#8f9ab0" font-weight="400" font-family="-apple-system,'Segoe UI',Inter,Helvetica,Arial,sans-serif" text-anchor="start">simulated lab or real</text>
+<text x="820" y="120" font-size="12" fill="#8f9ab0" font-weight="400" font-family="-apple-system,'Segoe UI',Inter,Helvetica,Arial,sans-serif" text-anchor="start">instruments, raw files kept</text>
+<path d="M784 102 L804 102" stroke="#5d6882" stroke-width="1.4" fill="none"/>
+<polygon points="804.0,102.0 795.7,105.5 795.7,98.5" fill="#5d6882"/>
+<rect x="1000" y="56" width="170" height="92" fill="#14233f" stroke="#5b8def" stroke-width="1"/>
+<text x="1014" y="81" font-size="14.5" fill="#e8ecf4" font-weight="600" font-family="-apple-system,'Segoe UI',Inter,Helvetica,Arial,sans-serif" text-anchor="start">6  Verdict</text>
+<text x="1014" y="103" font-size="12" fill="#8f9ab0" font-weight="400" font-family="-apple-system,'Segoe UI',Inter,Helvetica,Arial,sans-serif" text-anchor="start">fixed rule on the 95%</text>
+<text x="1014" y="120" font-size="12" fill="#8f9ab0" font-weight="400" font-family="-apple-system,'Segoe UI',Inter,Helvetica,Arial,sans-serif" text-anchor="start">interval against the gate</text>
+<path d="M978 102 L998 102" stroke="#5d6882" stroke-width="1.4" fill="none"/>
+<polygon points="998.0,102.0 989.7,105.5 989.7,98.5" fill="#5d6882"/>
+<text x="30" y="232" font-size="11" fill="#5d6882" font-weight="600" font-family="-apple-system,'Segoe UI',Inter,Helvetica,Arial,sans-serif" text-anchor="start" letter-spacing="1.4">WHAT THE RULE DECIDES</text>
+<rect x="30" y="250" width="360" height="84" fill="#14233f" stroke="#5b8def" stroke-width="1"/>
+<text x="44" y="275" font-size="14.5" fill="#e8ecf4" font-weight="600" font-family="-apple-system,'Segoe UI',Inter,Helvetica,Arial,sans-serif" text-anchor="start">Validated</text>
+<text x="44" y="297" font-size="12" fill="#8f9ab0" font-weight="400" font-family="-apple-system,'Segoe UI',Inter,Helvetica,Arial,sans-serif" text-anchor="start">interval fully past the gate</text>
+<text x="44" y="314" font-size="12" fill="#8f9ab0" font-weight="400" font-family="-apple-system,'Segoe UI',Inter,Helvetica,Arial,sans-serif" text-anchor="start">an orthogonal assay confirms or refutes it</text>
+<rect x="420" y="250" width="360" height="84" fill="#121926" stroke="#2a3550" stroke-width="1"/>
+<text x="434" y="275" font-size="14.5" fill="#e8ecf4" font-weight="600" font-family="-apple-system,'Segoe UI',Inter,Helvetica,Arial,sans-serif" text-anchor="start">Abstained</text>
+<text x="434" y="297" font-size="12" fill="#8f9ab0" font-weight="400" font-family="-apple-system,'Segoe UI',Inter,Helvetica,Arial,sans-serif" text-anchor="start">interval straddles the gate, or QC failed</text>
+<text x="434" y="314" font-size="12" fill="#8f9ab0" font-weight="400" font-family="-apple-system,'Segoe UI',Inter,Helvetica,Arial,sans-serif" text-anchor="start">no claim is made</text>
+<rect x="810" y="250" width="360" height="84" fill="#35150f" stroke="#e8604c" stroke-width="1"/>
+<text x="824" y="275" font-size="14.5" fill="#e8ecf4" font-weight="600" font-family="-apple-system,'Segoe UI',Inter,Helvetica,Arial,sans-serif" text-anchor="start">Refuted</text>
+<text x="824" y="297" font-size="12" fill="#8f9ab0" font-weight="400" font-family="-apple-system,'Segoe UI',Inter,Helvetica,Arial,sans-serif" text-anchor="start">interval fully on the wrong side</text>
+<text x="824" y="314" font-size="12" fill="#8f9ab0" font-weight="400" font-family="-apple-system,'Segoe UI',Inter,Helvetica,Arial,sans-serif" text-anchor="start">recorded, the family is discounted later</text>
+<path d="M1085 148 L1085 196 L210 196 L210 250" stroke="#5d6882" stroke-width="1.4" fill="none"/>
+<path d="M1085 148 L1085 196 L600 196 L600 250" stroke="#5d6882" stroke-width="1.4" fill="none"/>
+<path d="M1085 148 L1085 196 L990 196 L990 250" stroke="#5d6882" stroke-width="1.4" fill="none"/>
+<rect x="420" y="390" width="360" height="80" fill="#33290d" stroke="#e0ac24" stroke-width="1"/>
+<text x="434" y="415" font-size="14.5" fill="#e8ecf4" font-weight="600" font-family="-apple-system,'Segoe UI',Inter,Helvetica,Arial,sans-serif" text-anchor="start">A person decides what is left</text>
+<text x="434" y="437" font-size="12" fill="#8f9ab0" font-weight="400" font-family="-apple-system,'Segoe UI',Inter,Helvetica,Arial,sans-serif" text-anchor="start">follow up, accept as inconclusive, or drop</text>
+<text x="434" y="454" font-size="12" fill="#8f9ab0" font-weight="400" font-family="-apple-system,'Segoe UI',Inter,Helvetica,Arial,sans-serif" text-anchor="start">the decision is sealed in the ledger</text>
+<path d="M600 334 L600 390" stroke="#5d6882" stroke-width="1.4" fill="none"/>
+<polygon points="600.0,390.0 596.5,381.7 603.5,381.7" fill="#5d6882"/>
+<path d="M420 430 L 14 430 L 14 28 L 309 28 L 309 50" stroke="#5b8def" stroke-width="1.4" fill="none" stroke-dasharray="5 4"/>
+<path d="M309 40 L309 56" stroke="#5b8def" stroke-width="1.4" fill="none"/>
+<polygon points="309.0,56.0 305.5,47.7 312.5,47.7" fill="#5b8def"/>
+<text x="60" y="497" font-size="12" fill="#5b8def" font-weight="400" font-family="-apple-system,'Segoe UI',Inter,Helvetica,Arial,sans-serif" text-anchor="start">Next round: with re-plan on, the model proposes new hypotheses from the results and a person approves them the same way.</text>
+<rect x="30" y="512" width="1140" height="34" fill="#14233f" stroke="#5b8def" stroke-width="1"/>
+<text x="46" y="534" font-size="12.5" fill="#e8ecf4" font-weight="400" font-family="-apple-system,'Segoe UI',Inter,Helvetica,Arial,sans-serif" text-anchor="start">Every step above is a hash-chained record. proef prove &lt;problem-id&gt; renders the whole chain as a shareable audit.</text>
+</svg>
